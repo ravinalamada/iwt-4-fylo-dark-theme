@@ -1,0 +1,50 @@
+.fylo--features2 {
+  @include padding-inline;
+  margin-bottom: 100px;
+}
+
+.fylo--features2__heading {
+  @include heading-fong;
+  font-size: 30px;
+}
+
+.fylo--features2--container {
+  text-align: left;
+}
+
+.fylo--features2__link--wrapper {
+  border-bottom: 1px $cyan solid;
+  max-width: max-content;
+}
+
+.fylo--features2__link--wrapper::after {
+  content: '';
+  display: block;
+  background-image: url('../icons/icon-arrow.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: -23px;
+  left: 140px;
+}
+
+.fylo--features2__link {
+  @include heading-fong;
+  color: $cyan;
+}
+
+.fylo--features2__link::after {
+  }
+
+@media(min-width: 1000px) {
+  .fylo--features2--container {
+    @include desk-break-point;
+    @include flex-row;
+  }
+
+  .fylo--features2--wrapper {
+    flex-basis: 40%;
+  }
+}

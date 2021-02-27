@@ -1,0 +1,357 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #181f2a;
+  text-align: center; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+ul,
+fieldset {
+  margin: 0;
+  padding: 0; }
+
+fieldset,
+button {
+  border-color: transparent; }
+
+button {
+  cursor: pointer; }
+
+img {
+  width: 80%; }
+
+.fylo__header--contianer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #1c2431;
+  padding-bottom: 100px; }
+
+.fylo__header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; }
+
+.fylo__header__links {
+  color: white;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 400; }
+
+@media (min-width: 1000px) {
+  .fylo__header--contianer {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.fylo__mastheader {
+  background-color: #1c2431;
+  margin-bottom: 100px; }
+
+.fylo__mastheader--container {
+  background-image: url("../icons/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom; }
+
+.fylo__mastheader__heading {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 30px; }
+
+.fylo__mastheader__btn {
+  background-color: #339ecc;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize; }
+
+.fylo__mastheader__img {
+  margin-bottom: 5%; }
+
+@media (min-width: 1000px) {
+  .fylo__mastheader--container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.fylo--features1 {
+  margin-bottom: 100px; }
+
+.fylo--features1--container {
+  padding-left: 16px;
+  padding-right: 16px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 50px; }
+
+.fylo--features1__heading {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 25px; }
+
+@media (min-width: 1000px) {
+  .fylo--features1--container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 100px;
+    row-gap: 60px; } }
+
+.fylo--features2 {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 100px; }
+
+.fylo--features2__heading {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 30px; }
+
+.fylo--features2--container {
+  text-align: left; }
+
+.fylo--features2__link--wrapper {
+  border-bottom: 1px #65e2d9 solid;
+  max-width: max-content; }
+
+.fylo--features2__link--wrapper::after {
+  content: '';
+  display: block;
+  background-image: url("../icons/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: -23px;
+  left: 140px; }
+
+.fylo--features2__link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #65e2d9; }
+
+@media (min-width: 1000px) {
+  .fylo--features2--container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .fylo--features2--wrapper {
+    flex-basis: 40%; } }
+
+.fylo--features3--container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 32px;
+  text-align: left; }
+
+.fylo--features3__section {
+  background-color: #202a3c;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-radius: 12px; }
+
+.fylo--features3--wrapper1,
+.fylo--features3--wrapper2,
+.fylo--features3--wrapper3 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-inline-start: calc(50px + 16px);
+  margin-block-start: -2rem; }
+
+.fylo--features3--container::before {
+  content: '';
+  display: block;
+  background-image: url("../images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 2.5rem;
+  left: 3px; }
+
+.fylo--features3__section:nth-of-type(1) {
+  grid-column: 1 / 2; }
+
+.fylo--features3--wrapper1::before,
+.fylo--features3--wrapper2::before,
+.fylo--features3--wrapper3::before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: -66px;
+  top: 59px; }
+
+.fylo--features3--wrapper1::before {
+  background-image: url("../images/profile-1.jpg"); }
+
+.fylo--features3--wrapper2::before {
+  background-image: url("../images/profile-2.jpg"); }
+
+.fylo--features3--wrapper3::before {
+  background-image: url("../images/profile-3.jpg"); }
+
+@media (min-width: 1000px) {
+  .fylo--features3--container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 32px;
+    margin-bottom: 100px; } }
+
+.fylo--features4 {
+  background-color: #202a3c;
+  padding-top: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 30px;
+  max-width: max-content;
+  margin-left: 16px;
+  margin-right: 16px; }
+
+.fylo--features4--container,
+.fylo--features4__header,
+.fylo--features4__form {
+  display: flex;
+  flex-direction: column; }
+
+.fylo--features4__form {
+  margin-top: 50px;
+  gap: 20px; }
+
+.fylo--features4__btn,
+.fylo--features4__input {
+  background-color: #339ecc;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize; }
+
+.fylo--features4__input {
+  width: 100%;
+  background-color: white;
+  padding-left: 16px;
+  border-color: transparent; }
+
+.fylo--features4__input:focus {
+  border-color: blue;
+  outline: blue; }
+
+@media (min-width: 1000px) {
+  .fylo--features4--container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    align-items: center; }
+  .fylo--features4__header,
+  .fylo--features4__form {
+    align-items: center; } }
+
+.fylo__footer {
+  padding-bottom: 50px; }
+
+.fylo__footer__nav {
+  margin-bottom: 50px; }
+
+.fylo__footer__list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 40px; }
+
+.fylo__footer__items {
+  margin-bottom: 16px; }
+
+.fylo__footer__links {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 16px; }
+
+.fylo__footer__items--icons {
+  width: 50px; }
+
+.fylo__footer__list--icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 16px; }
+
+.fylo__footer__links--icons {
+  display: block;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.fylo__footer__links--icons--facebook {
+  background-image: url("../icons/icon-facebook.svg"); }
+
+.fylo__footer__links--icons--facebook:hover,
+.fylo__footer__links--icons--facebook:focus {
+  background-image: url("../icons/focused-facebook_icon");
+  background-size: contain; }
+
+.fylo__footer__links--icons--instagram {
+  background-image: url("../icons/icon-instagram.svg"); }
+
+.fylo__footer__links--icons--instagram:hover,
+.fylo__footer__links--icons--instagram:focus {
+  background-image: url("../icons/focuesd-instagram.svg"); }
+
+.fylo__footer__links--icons--twitter {
+  background-image: url("../icons/icon-twitter.svg"); }
+
+.fylo__footer__links--icons--twitter:hover,
+.fylo__footer__links--icons--twitter:focus {
+  background-image: url("../icons/focused-twitter.svg"); }
+
+.huddle__footer--input--email {
+  background-image: url("../icons/icon-email.svg"); }

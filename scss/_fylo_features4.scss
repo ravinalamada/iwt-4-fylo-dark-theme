@@ -1,0 +1,53 @@
+.fylo--features4 {
+  background-color: $dark-blue-testimonial;
+  padding-top: 30px;
+  @include padding-inline;
+  padding-bottom: 30px;
+  max-width: max-content;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.fylo--features4--container,
+.fylo--features4__header,
+.fylo--features4__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fylo--features4__form {
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.fylo--features4__btn,
+.fylo--features4__input {
+  @include buttons;
+}
+
+.fylo--features4__input {
+  width: 100%;
+  background-color: $white;
+  padding-left: 16px;
+  border-color: transparent;
+}
+
+.fylo--features4__input:focus {
+  border-color: blue;
+  outline: blue;
+}
+
+@media(min-width: 1000px) {
+  .fylo--features4--container {
+    @include desk-break-point;
+    width: max-content;
+    align-items: center;
+  }
+
+  .fylo--features4__header,
+  .fylo--features4__form {
+    align-items: center;
+  }
+
+}
+

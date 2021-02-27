@@ -1,0 +1,80 @@
+.fylo--features3--container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 32px;
+  text-align: left;
+}
+
+.fylo--features3__section {
+  background-color: $dark-blue-testimonial;
+  @include padding-inline;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-radius: 12px;
+}
+
+.fylo--features3--wrapper1,
+.fylo--features3--wrapper2,
+.fylo--features3--wrapper3  {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-inline-start: calc(50px + 16px);
+  margin-block-start: -2rem;
+}
+
+.fylo--features3--container::before {
+  content: '';
+  display: block;
+  background-image: url('../images/bg-quotes.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 2.5rem;
+  left: 3px;
+}
+
+.fylo--features3__section:nth-of-type(1) {
+  grid-column: 1 / 2;
+}
+
+.fylo--features3--wrapper1::before,
+.fylo--features3--wrapper2::before,
+.fylo--features3--wrapper3::before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: -66px;
+  top: 59px;
+}
+
+.fylo--features3--wrapper1::before {
+  background-image: url('../images/profile-1.jpg');
+}
+
+.fylo--features3--wrapper2::before {
+  background-image: url('../images/profile-2.jpg');
+}
+
+.fylo--features3--wrapper3::before {
+  background-image: url('../images/profile-3.jpg');
+}
+
+@media(min-width: 1000px) {
+  .fylo--features3--container {
+    @include desk-break-point;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 32px;
+    margin-bottom: 100px;
+  }
+}
+
+

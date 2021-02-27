@@ -1,0 +1,33 @@
+
+.fylo__mastheader {
+  background-color: $dark-blue-intro;
+  margin-bottom: 100px;
+}
+
+.fylo__mastheader--container {
+  background-image: url('../icons/bg-curvy-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.fylo__mastheader__heading{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.fylo__mastheader__btn {
+  @include buttons;
+}
+
+.fylo__mastheader__img {
+  margin-bottom: 5%;
+}
+
+@media(min-width: 1000px) {
+
+  .fylo__mastheader--container {
+    @include desk-break-point ;
+  }
+}

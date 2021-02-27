@@ -1,0 +1,47 @@
+
+
+$dark-blue-testimonial: hsl(219, 30%, 18%);
+$dark-blue-footer: hsl(216, 53%, 9%);
+$dark-blue-main: hsl(218, 28%, 13%);
+$dark-blue-intro: hsl(217, 28%, 15%);
+$blue: hsl(198, 60%, 50%);
+$cyan: hsl(176, 68%, 64%);
+$light-red-error: hsl(0, 100%, 63%);
+$white: hsl(0, 0%, 100%);
+
+
+@mixin buttons {
+  background-color: $blue;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  color: $white;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+@mixin desk-break-point {
+  max-width: 1114px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin heading-fong {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+@mixin padding-inline {
+  padding-left: 16px;
+  padding-right: 16px;
+}
