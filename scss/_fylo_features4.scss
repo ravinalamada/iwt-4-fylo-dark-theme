@@ -1,11 +1,15 @@
 .fylo--features4 {
-  background-color: $dark-blue-testimonial;
-  padding-top: 30px;
   @include padding-inline;
-  padding-bottom: 30px;
-  max-width: max-content;
   margin-left: 16px;
   margin-right: 16px;
+}
+
+.fylo--features4--container {
+  background-color: $dark-blue-testimonial;
+  @include padding-inline ;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-radius: 12px;
 }
 
 .fylo--features4--container,
@@ -38,10 +42,20 @@
 }
 
 @media(min-width: 1000px) {
+
+  .fylo--features4 {
+    position: relative;
+    top: 6rem;
+  }
+
   .fylo--features4--container {
     @include desk-break-point;
-    width: max-content;
+    max-width: 700px;
     align-items: center;
+  }
+
+  .fylo--features4__form {
+    @include flex-row;
   }
 
   .fylo--features4__header,

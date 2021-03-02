@@ -1,3 +1,7 @@
+.fylo__header {
+  background-color: $dark-blue-intro;
+}
+
 .fylo__header--contianer {
   @include flex-row;
   @include padding-inline;
@@ -7,13 +11,13 @@
 
 .fylo__header__list {
   @include flex-row;
-  gap: 20px;
+  gap: 32px;
   flex-wrap: wrap;
 }
 
 .fylo__header__links {
   color: $white;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: capitalize;
   font-weight: 400;
 }
@@ -21,6 +25,6 @@
 @media(min-width: 1000px) {
 
   .fylo__header--contianer {
-    @include desk-break-point ;
+    // @include desk-break-point ;
   }
 }

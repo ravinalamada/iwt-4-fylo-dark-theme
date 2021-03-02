@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #181f2a;
   text-align: center; }
 
 * {
@@ -33,6 +32,12 @@ button {
 img {
   width: 80%; }
 
+main {
+  background-color: #181f2a; }
+
+.fylo__header {
+  background-color: #1c2431; }
+
 .fylo__header--contianer {
   display: flex;
   flex-direction: row;
@@ -48,20 +53,14 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 32px;
   flex-wrap: wrap; }
 
 .fylo__header__links {
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: capitalize;
   font-weight: 400; }
-
-@media (min-width: 1000px) {
-  .fylo__header--contianer {
-    max-width: 1114px;
-    margin-left: auto;
-    margin-right: auto; } }
 
 .fylo__mastheader {
   background-color: #1c2431;
@@ -95,9 +94,11 @@ img {
 
 @media (min-width: 1000px) {
   .fylo__mastheader--container {
-    max-width: 1114px;
+    max-width: 1144px;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .fylo__mastheader--container {
+    background-image: url("../icons/bg-curvy-desktop.svg"); } }
 
 .fylo--features1 {
   margin-bottom: 100px; }
@@ -116,7 +117,7 @@ img {
 
 @media (min-width: 1000px) {
   .fylo--features1--container {
-    max-width: 1114px;
+    max-width: 1144px;
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: repeat(2, 1fr);
@@ -160,7 +161,7 @@ img {
 
 @media (min-width: 1000px) {
   .fylo--features2--container {
-    max-width: 1114px;
+    max-width: 1144px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -233,23 +234,27 @@ img {
 
 @media (min-width: 1000px) {
   .fylo--features3--container {
-    max-width: 1114px;
+    max-width: 1144px;
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     column-gap: 32px;
-    margin-bottom: 100px; } }
+    margin-bottom: 50px; } }
 
 .fylo--features4 {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 16px;
+  margin-right: 16px; }
+
+.fylo--features4--container {
   background-color: #202a3c;
-  padding-top: 30px;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 30px;
-  max-width: max-content;
-  margin-left: 16px;
-  margin-right: 16px; }
+  padding-top: 30px;
+  border-radius: 12px; }
 
 .fylo--features4--container,
 .fylo--features4__header,
@@ -285,18 +290,28 @@ img {
   outline: blue; }
 
 @media (min-width: 1000px) {
+  .fylo--features4 {
+    position: relative;
+    top: 6rem; }
   .fylo--features4--container {
-    max-width: 1114px;
+    max-width: 1144px;
     margin-left: auto;
     margin-right: auto;
-    width: max-content;
+    max-width: 700px;
+    align-items: center; }
+  .fylo--features4__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center; }
   .fylo--features4__header,
   .fylo--features4__form {
     align-items: center; } }
 
 .fylo__footer {
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  background-color: #0b1523;
+  padding-top: 100px; }
 
 .fylo__footer__nav {
   margin-bottom: 50px; }
@@ -304,7 +319,7 @@ img {
 .fylo__footer__list {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  row-gap: 40px; }
+  row-gap: 10px; }
 
 .fylo__footer__items {
   margin-bottom: 16px; }
@@ -312,7 +327,8 @@ img {
 .fylo__footer__links {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 16px; }
+  font-size: 16px;
+  color: white; }
 
 .fylo__footer__items--icons {
   width: 50px; }
@@ -353,5 +369,42 @@ img {
 .fylo__footer__links--icons--twitter:focus {
   background-image: url("../icons/focused-twitter.svg"); }
 
-.huddle__footer--input--email {
-  background-image: url("../icons/icon-email.svg"); }
+.fylo__footer--email,
+.fylo__footer--phone {
+  padding-inline-start: 30px; }
+
+.fylo__footer--email {
+  background-image: url("../icons/icon-email.svg");
+  background-repeat: no-repeat; }
+
+.fylo__footer--email:hover,
+.fylo__footer--email:focus {
+  background-image: url("../icons/focused-icon-email.svg"); }
+
+.fylo__footer--phone {
+  background-image: url("../icons/icon-phone.svg");
+  background-repeat: no-repeat; }
+
+.fylo__footer--phone:hover,
+.fylo__footer--phone:focus {
+  background-image: url("../icons/focused-icon-phone.svg"); }
+
+@media (min-width: 1000px) {
+  .fylo__footer {
+    padding-top: 200px; }
+  .fylo__footer--container {
+    max-width: 1144px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 25% 1fr 25% 1fr;
+    text-align: left;
+    gap: 65px;
+    align-items: baseline; }
+  .fylo__footer__list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px; }
+  .fylo__footer--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; } }

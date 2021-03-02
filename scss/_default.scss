@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: $dark-blue-main;
   text-align: center;
 }
 
@@ -40,5 +39,9 @@ body {
   img {
     width: 80%;
   }
+
+main {
+  background-color: $dark-blue-main;
+}
 
 

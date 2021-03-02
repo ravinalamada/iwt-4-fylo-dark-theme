@@ -30,4 +30,8 @@
   .fylo__mastheader--container {
     @include desk-break-point ;
   }
+
+  .fylo__mastheader--container {
+    background-image: url('../icons/bg-curvy-desktop.svg');
+  }
 }
