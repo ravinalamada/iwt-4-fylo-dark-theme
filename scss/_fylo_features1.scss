@@ -17,6 +17,11 @@
 }
 
 @media(min-width: 1000px) {
+
+  .fylo--features1 {
+    margin-bottom: 150px;
+  }
+
   .fylo--features1--container {
     @include desk-break-point;
     grid-template-columns: repeat(2, 1fr);

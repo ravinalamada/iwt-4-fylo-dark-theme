@@ -27,6 +27,14 @@
 
 @media(min-width: 1000px) {
 
+  .fylo__mastheader {
+    margin-bottom: 150px;
+  }
+
+  .fylo__mastheader__heading {
+    font-size: 32px;
+  }
+
   .fylo__mastheader--container {
     @include desk-break-point ;
   }

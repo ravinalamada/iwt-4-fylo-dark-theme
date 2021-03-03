@@ -39,12 +39,31 @@
   }
 
 @media(min-width: 1000px) {
+
+  .fylo--features2 {
+    margin-bottom: 150px;
+  }
+
   .fylo--features2--container {
     @include desk-break-point;
     @include flex-row;
+    justify-content: unset;
+    gap: 50px;
   }
 
-  .fylo--features2--wrapper {
+  .fylo--features2__heading {
+    font-size: 40px;
+  }
+
+  .fylo--features2--wrapper:nth-of-type(1) {
+    flex-basis: 60%;
+  }
+
+  .fylo--features2--wrapper:nth-of-type(2) {
     flex-basis: 40%;
+  }
+
+  .fylo--features2__img {
+    width: 100%;
   }
 }

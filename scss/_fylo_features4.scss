@@ -50,7 +50,7 @@
 
   .fylo--features4--container {
     @include desk-break-point;
-    max-width: 700px;
+    max-width: 800px;
     align-items: center;
   }
 
@@ -61,6 +61,12 @@
   .fylo--features4__header,
   .fylo--features4__form {
     align-items: center;
+  }
+
+  .fylo--features4__heading {
+    font-size: 40px;
+    margin: 0;
+    margin-block-end: 1rem;
   }
 
 }
