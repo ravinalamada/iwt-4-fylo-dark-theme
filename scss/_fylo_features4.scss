@@ -2,6 +2,8 @@
   @include padding-inline;
   margin-left: 16px;
   margin-right: 16px;
+  position: relative;
+  top: 10rem;
 }
 
 .fylo--features4--container {
@@ -44,7 +46,6 @@
 @media(min-width: 1000px) {
 
   .fylo--features4 {
-    position: relative;
     top: 6rem;
   }
 

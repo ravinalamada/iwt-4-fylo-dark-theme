@@ -1,7 +1,8 @@
 .fylo__footer {
   padding-bottom: 50px;
   background-color: hsl(216, 53%, 9%);
-  padding-top: 100px;
+  padding-top: 300px;
+  @include padding-inline;
 }
 
 .fylo__footer--container{
@@ -22,11 +23,19 @@
   margin-bottom: 16px;
 }
 
+.fylo__footer__items:nth-of-type(4) {
+  margin-bottom: 50px;
+}
+
 .fylo__footer__links{
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: $white;
+}
+
+.fylo__footer__items:nth-of-type(4) {
+  margin-bottom: 0;
 }
 
 .fylo__footer__items--icons {
